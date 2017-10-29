@@ -1,5 +1,5 @@
-# roll-the-dice
-A mini game called: roll the dice
+# Roll the Dice
+## A mini game called: roll the dice
 
 ### GAME RULES:
 
