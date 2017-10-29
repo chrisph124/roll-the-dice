@@ -58,6 +58,7 @@ function rollTheDice() {
       if (dice1 === 6 && dice2 === 6) {
         document.querySelector("#current-" + activePlayer).textContent = 0;
         document.querySelector("#score-" + activePlayer).textContent = 0;
+        nextPlayer()
       } else if (dice1 !== 1 && dice2 !== 1) {
         // Player will lost their ROUND score if one of the dice is 1
         // If not, update the score for player
