@@ -54,12 +54,13 @@ function rollTheDice() {
       diceDOM2.src = "dice-" + dice2 + ".png";
 
       //3. Condition for players
-      // Player will loose ALL score if they roll two 6 in a row
+      // Player will lost ALL score if they roll two 6 in a row
       if (dice1 === 6 && dice2 === 6) {
         document.querySelector("#current-" + activePlayer).textContent = 0;
         document.querySelector("#score-" + activePlayer).textContent = 0;
-      } else if (dice1 !== 1 && dice2 !== 1) {
-        // Player will loose their ROUND score if one of the dice is 1
+      } else if (dice1 !== 1 || dice2 !== 1) {
+        // Player will lost their ROUND score if one of the dice is 1
+        // If not, update the score for player
         diceTotal = dice1 + dice2;
         roundScore += diceTotal;
         document.querySelector(
